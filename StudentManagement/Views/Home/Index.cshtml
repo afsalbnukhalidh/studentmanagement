@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentManagement</title>
+</head>
+<body>
+  
+    @*First we creating teacher crud operation for admin side*@          @*not here*@           @*First we creating teacher crud operation for admin side*@
+   
+    @*crud button stored inside the admin tag of navbar*@
+
+    <!-- Modal HTML -->
+    <div id="teacherModal" class="modal fade rounded ">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="teacherForm">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Teacher Details</h4>
+                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" class="form-control" id="subject" name="subject">
+                        </div>
+                           <div>
+                            <input type="text" class="form-control d-none" id="status" name="status" value="A">
+                           </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+	
+
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/js/customteacher.js"></script>
+</body>
+</html>
+
